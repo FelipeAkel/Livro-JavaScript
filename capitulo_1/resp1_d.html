@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 1 - Exercício D - Página 40">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <!-- <link rel="stylesheet" href="css/estilo.css"> -->
+
+    <title>Capítulo 1 - Exercício D - Página 40</title>
+</head>
+<body>
+    <h1>Capítulo 1 - Exercício D - Página 40</h1>
+    <p>
+        Elaborar um programa que leia 2 notas de um aluno em uma disciplina.<br>
+        Calcule e informe a médias das notas.
+    </p>
+    <script>
+        const nota1 = Number(prompt(`1º nota: `));
+        const nota2 = Number(prompt(`2º nota: `));
+        const media = (nota1 + nota2) / 2;
+
+        alert(`1º nota: ${nota1} \n2º nota: ${nota2} \nMédia: ${media.toFixed(2)}`);
+        console.log(`1º nota: ${nota1}`, typeof nota1 );
+        console.log(`2º nota: ${nota2}`, typeof nota2 );
+        console.log(`Média: ${media.toFixed(2)}`, typeof media );
+    </script>
+</body>
+</html>

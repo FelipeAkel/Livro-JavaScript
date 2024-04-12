@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 1 - Exercício C - Página 40">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <!-- <link rel="stylesheet" href="css/estilo.css"> -->
+
+    <title>Capítulo 1 - Exercício C - Página 40</title>
+</head>
+<body>
+    <h1>Capítulo 1 - Exercício C - Página 40</h1>
+    <p>
+        Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja.<br>
+        Calcule e informe o valor para o pagamento à vista com 10% de desconto e o valor em 3x.
+    </p>
+    <script>
+        const preco = Number(prompt('Preço do Produto: '));
+        const aVista = preco - (preco * 0.10);
+        const dividido = preco / 3;
+
+        alert(`Preço do Produto: R$ ${preco.toFixed(2)} \nDesconto 10% à Vista: R$ ${aVista.toFixed(2)} \nDividido em 3x: R$ ${dividido.toFixed(2)}`);
+        console.log(`Preço do Produto: R$ ${preco.toFixed(2)}`, typeof preco);
+        console.log(`Desconto 10% à Vista: R$ ${aVista.toFixed(2)}`, typeof aVista);
+        console.log(`Dividido em 3x: R$ ${dividido.toFixed(2)}`, typeof dividido);
+    </script>
+</body>
+</html>

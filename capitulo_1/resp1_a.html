@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 1 - Exercício A - Página 39">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <!-- <link rel="stylesheet" href="css/estilo.css"> -->
+
+    <title>Capítulo 1 - Exercício A - Página 39</title>
+</head>
+<body>
+    <h1>Capítulo 1 - Exercício A - Página 39</h1>
+    <p>Elaborar um programa que leia um número. Calcule e informe os seus vizinhos, ou seja, o número anterior e posterior.</p>
+    <script>
+        const numero = Number(prompt("Qual é o número: "));
+        const anterior = numero - 1;
+        const posterior = numero + 1;
+
+        alert(`Vizinhos ${anterior} e ${posterior}`);
+        console.log('Anterior ' + anterior, typeof anterior);
+        console.log('Posterior ' + posterior, typeof posterior);
+    </script>
+</body>
+</html>

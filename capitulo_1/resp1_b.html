@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 1 - Exercício B - Página 40">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <!-- <link rel="stylesheet" href="css/estilo.css"> -->
+
+    <title>Capítulo 1 - Exercício B - Página 40</title>
+</head>
+<body>
+    <h1>Capítulo 1 - Exercício B - Página 40</h1>
+    <p>Elaborar um programa para uma pizzaria, o qual leia o valor total de uma conta e quantos clientes vão paga-la. Calcule e informe o valor a ser pago por cliente.</p>
+    <script>
+        const total = Number(prompt("Valor total da connta: "));
+        const clientePagantes = Number(prompt("Quantos clientes pagantes: "));
+        const totalCliente = total / clientePagantes;
+
+        alert(`Valor da conta: R$ ${total.toFixed(2)} \nNúmero de clientes: ${clientePagantes} \nValor por cliente: R$ ${totalCliente.toFixed(2)}`);
+        console.log('Valor da conta: R$ ' + total, typeof total);
+        console.log('Número de clientes: ' + clientePagantes, typeof clientePagantes);
+        console.log('Valor por cliente: R$ ' + totalCliente, typeof totalCliente);
+    </script>
+</body>
+</html>

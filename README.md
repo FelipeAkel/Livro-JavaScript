@@ -1,6 +1,6 @@
 # Livro-JavaScript
 
-<p align="center"><img src="java-script.jpg" width="400"></p>
+<p align="center"><img src="img/java-script.jpg" width="400"></p>
 
 ## Lógica de Programação e Algoritmos com JavaScript
 
