@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 2 - Exercício A - Página 60">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 2 - Exercício A - Página 60</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 2
+            <small class="text-body-secondary">Exercício A - Página 60</small>
+        </h1>
+        <p>
+            <b>Uma farmácia está com uma promoção</b> - Na compra de duas unidade e um mesmo medicamento, o cliente recebe como desconto os cetavos o valor total.
+            <br>Elaborar um programa que leia descrição e preço de um medicamento. Informe o valor o produto na promoção.
+        </p>
+
+        <h3 class="mt-4">Farmácia JavaScript</h3>
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col">
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="inMedicamento" class="form-label">Medicamento:</label>
+                        <input type="text" class="form-control" name="inMedicamento" id="inMedicamento" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inPreco" class="form-label">Preço:</label>
+                        <input type="number" class="form-control" name="inPreco" id="inPreco" step="0.01" min="0" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Visualizar</button>
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+        <p id="outMedicamento"></p>
+        <p id="outPromocao"></p>
+        
+    </div>
+
+    <script src="js/resp2_a.js"></script>
+
+</body>
+</html>

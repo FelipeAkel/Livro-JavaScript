@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 2 - Exercício B - Página 60">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 2 - Exercício B - Página 60</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 2
+            <small class="text-body-secondary">Exercício B - Página 60</small>
+        </h1>
+        <p>
+            <b>Elaborar um programa para uma lan hause de um aeroporto</b> - O programa deve ler o valor de cada 15
+            minutos de uso de um computador e o tempo de uso por um cliente em minutos.
+            <br>Informe o valor a ser pago pelo cliente, sabendo que as frações extras e 15 minutos devem ser cobradas de forma integral.
+        </p>
+
+        <h3 class="mt-4">Lan Hause JavaScript</h3>
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="inValor" class="form-label">Valor por 15min de Uso R$:</label>
+                        <input type="number" class="form-control" name="inValor" id="inValor" step="0.01" min="0" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inTempo" class="form-label">Tempo de Uso</label>
+                        <input type="number" class="form-control" name="inTempo" id="inTempo" min="0" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Calcular o Valor a Pagar</button>
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+        <p id="outTotalPagar"></p>
+    </div>
+
+    <script src="js/resp2_b.js"></script>
+
+</body>
+
+</html>

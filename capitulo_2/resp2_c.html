@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 2 - Exercício C - Página 60">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 2 - Exercício C - Página 60</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 2
+            <small class="text-body-secondary">Exercício C - Página 60</small>
+        </h1>
+        <p>
+            <b>Um supermercado está com uma promoção</b> - Para aumentar suas vendas no setor de higiene, cada
+            etiqueta de produto deve exibir uma mensagem anunciando 50% dde desconto (para um item) na compra de três
+            uniades ddo produto.
+            <br>Elaborar um programa que leia a descrição e preço de um produto. Após, apresente as mensages indicando a promoção.
+        </p>
+
+        <h3 class="mt-4">Supermercado JavaScript</h3>
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="inProduto" class="form-label">Produto:</label>
+                        <input type="text" class="form-control" name="inProduto" id="inProduto">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inPreco" class="form-label">Preço:</label>
+                        <input type="number" class="form-control" name="inPreco" id="inPreco" step="0.01" min="0">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Ver Promoção</button>
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+        <p id="outPromocao"></p>
+        <p id="outDesconto"></p>
+    </div>
+
+    <script src="js/resp2_c.js"></script>
+
+</body>
+
+</html>
