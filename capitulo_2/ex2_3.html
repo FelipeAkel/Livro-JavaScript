@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 2 - Exemplos 3 - Página 56">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 2 - Exemplos 3 - Página 56</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 2
+            <small class="text-body-secondary">Exemplos 3 - Página 56</small>
+        </h1>
+        <p>
+            Elaborar um programa para uma revenda de veículos. O programa deve ler modelo e preço do veículo.
+            <br>Apresentar como resposta o valor da entrada (50%) e o saldo em 12x.
+        </p>
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col"></div>
+            <div class="col-4 themed-grid-col">
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="inVeiculo" class="form-label">Veículo:</label>
+                        <input type="text" class="form-control" name="inVeiculo" id="inVeiculo">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inPreco" class="form-label">Preço:</label>
+                        <input type="number" step="0.01" class="form-control" name="inPreco" id="inPreco">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Ver Promoção</button>
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+        <p id="outVeiculo"></p>
+        <p id="outPromocao"></p>
+    </div>
+
+    <script src="js/ex2_3.js"></script>
+
+</body>
+</html>
