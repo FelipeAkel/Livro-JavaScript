@@ -19,4 +19,4 @@ Além disso, destaca-se que estou padronizando os commits, criando branchs de ca
 
 ### [Padrões de Commit](https://github.com/iuricode/padroes-de-commits)
 
-<p align="center"><b>Versão 1.0.0</b></p>
+<p align="center"><b>Versão 2.0.0</b></p>
