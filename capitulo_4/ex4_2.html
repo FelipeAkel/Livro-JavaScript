@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 4 - Exemplos 2 - Página 81">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 4 - Exemplos 2 - Página 81</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 4
+            <small class="text-body-secondary">Exemplos 2 - Página 81</small>
+        </h1>
+
+        <h3 class="mt-4">Programa Cálculo do Peso Ideal</h3>
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col">
+                <figure class="figure">
+                    <img src="img/ex4_2.jpg" class="figure-img img-fluid rounded" alt="Balança">
+                    <figcaption class="figure-caption">Balança</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 themed-grid-col">
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="inNome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" name="inNome" id="inNome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inSexoMasculino" class="form-label">Sexo:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="inSexo" id="inSexoMasculino" value="M" required>
+                            <label class="form-check-label" for="inSexoMasculino">
+                                Masculino
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="inSexo" id="inSexoFeminino" value="F" required>
+                            <label class="form-check-label" for="inSexoFeminino">
+                                Feminino
+                            </label>
+                          </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inAltura" class="form-label">Altura:</label>
+                        <input type="number" class="form-control" name="inAltura" id="inAltura" step="0.01" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Calcular Peso Ideal</button>
+                    <button type="reset" class="btn btn-secondary">Limpar Campos</button>
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+        <p id="outResultado"></p>
+    </div>
+
+    <script src="js/ex4_2.js"></script>
+
+</body>
+</html>
