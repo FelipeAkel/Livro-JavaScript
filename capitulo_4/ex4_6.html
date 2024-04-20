@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 4 - Exemplos 6 - Página 88">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 4 - Exemplos 6 - Página 88</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 4
+            <small class="text-body-secondary">Exemplos 6 - Página 88</small>
+        </h1>
+
+        <h3 class="mt-4">Programa Caixa Eletrônico</h3>
+        <p>
+            Em um determinado momento do dia, apenas notas de 10, 50 e 100 estão disponíveis em um terminal e caixa
+            eletrônico.
+            <br>Elaborar um programa que leia um valor de um saque de um cliente, verifica sua validade (ou seja, se
+            pode ser pago com as notas disponíveis) e informe o número mínnimo de notas de 100, 50 e 10 necessárias para
+            pagar esse saque.
+        </p>
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col">
+                <figure class="figure">
+                    <img src="img/ex4_6.jpg" class="figure-img img-fluid rounded" alt="Caixa Eletrônico">
+                    <figcaption class="figure-caption">Caixa Eletrônico</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 themed-grid-col">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="inValor" class="form-label">Valor do Saque R$:</label>
+                        <input type="number" class="form-control" name="inValor" id="inValor">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Exibir Notas para Saque</button>
+                    <button type="reset" class="btn btn-secondary">Limpar Campos</button>
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+        <p id="outSaqueIndisponivel"></p>
+        <p id="outNota100"></p>
+        <p id="outNota50"></p>
+        <p id="outNota10"></p>
+
+    </div>
+
+    <script src="js/ex4_6.js"></script>
+
+</body>
+
+</html>
