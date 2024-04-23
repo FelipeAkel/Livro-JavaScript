@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 4 - Exercício B - Página 93">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 4 - Exercício B - Página 93</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 4
+            <small class="text-body-secondary">Exercício B - Página 93</small>
+        </h1>
+
+        <h3 class="mt-4">Programa Verifica Velocidade</h3>
+        <p>
+            Elaborar um programa que leia a velocidade permitda em uma estrada e a velocidade de um condutor.
+            <br>Se a velocidade for inferior ou igual à permitida, exiba "Sem Multa". 
+            <br>Se a velocidade for de até 20% maior que a permitida, exiva "Multa Leve".
+            <br>E, se a velocidade for superior a 20% da veleciodade permitida, exiba "Multa Grave".
+        </p>
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col">
+                <figure class="figure">
+                    <img src="img/exerc.jpg" class="figure-img img-fluid rounded" alt="Imagem Ilustrativa Exercício">
+                    <figcaption class="figure-caption">Imagem Ilustrativa Exercício</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 themed-grid-col">
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="inVelPermitida" class="form-label">Velocidade Permitida:</label>
+                        <input type="number" class="form-control" name="inVelPermitida" id="inVelPermitida" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inVelCondutor" class="form-label">Velocidade do Condutor:</label>
+                        <input type="number" class="form-control" name="inVelCondutor" id="inVelCondutor" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Verificar Velocidade </button>
+                    <button type="reset" class="btn btn-secondary">Limpar Campos</button>
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+        <p id="outResultado"></p>
+    </div>
+
+    <script src="js/resp4_b.js"></script>
+
+</body>
+</html>

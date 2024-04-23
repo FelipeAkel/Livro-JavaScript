@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 4 - Exercício D - Página 94">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 4 - Exercício D - Página 94</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 4
+            <small class="text-body-secondary">Exercício D - Página 94</small>
+        </h1>
+
+        <h3 class="mt-4">Programa Lados de um Triângulo</h3>
+        <p>
+            Elaborar um programa que leia três lados e verifique se eles podem ou não formar um triângulo.
+            <br>Para formar um triângulo, um dos lados não pode ser maior que a soma dos outros dois.
+            <br>Caso possam formar um triângulo, exiba também qual o tipo do triângulo:
+            <br>Equilátero (3 lados iguais), Isósceles (2 lados iguais) e Escaleno (3 lados diferentes)
+        </p>
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col">
+                <figure class="figure">
+                    <img src="img/exerc.jpg" class="figure-img img-fluid rounded" alt="Imagem Ilustrativa Exercício">
+                    <figcaption class="figure-caption">Imagem Ilustrativa Exercício</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 themed-grid-col">
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="inLadoA" class="form-label">Lado A:</label>
+                        <input type="number" class="form-control" name="inLadoA" id="inLadoA" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inLadoB" class="form-label">Lado B:</label>
+                        <input type="number" class="form-control" name="inLadoB" id="inLadoB" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inLadoC" class="form-label">Lado C:</label>
+                        <input type="number" class="form-control" name="inLadoC" id="inLadoC" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Verificar Lados</button>
+                    <button type="reset" class="btn btn-secondary">Limpar Campos</button>
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col">
+            </div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+        <p id="outTriangulo"></p>
+        <p id="outTipoTriangulo"></p>        
+    </div>
+
+    <script src="js/resp4_d.js"></script>
+
+</body>
+</html>
