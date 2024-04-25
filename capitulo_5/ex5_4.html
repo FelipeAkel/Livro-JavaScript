@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 5 - Exemplos 4 - Página 107">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 5 - Exemplos 4 - Página 107</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 5
+            <small class="text-body-secondary">Exemplos 4 - Página 107</small>
+        </h1>
+
+        <h3 class="mt-4">Programa Do While</h3>
+        <p>Funcionnamento do "Break" e "Continue"</p>
+        
+        <script>
+            alert("Digite 0 'Zero' para sair!");
+
+            do{
+                let num = Number(prompt("Número: "));
+                
+                if(num == 0 || isNaN(num)){
+                    const sair = confirm("Deseja Sair? ");
+                    if(sair == true){
+                        break;
+                    } else {
+                        continue;
+                    }
+                }
+
+                let resultado = null;
+                if(num % 2 == 0) {
+                    resultado = 
+                    alert(`O número ${num} é "Par" \n${num} x 2 = ${num * 2}`);
+                } else {
+                    alert(`O número ${num} é "Ímpar" \n${num} x 3 = ${num * 3}`);
+                }
+            }while(true);
+            
+        </script>
+        
+    </div>
+
+</body>
+</html>
