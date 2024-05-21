@@ -1,0 +1,59 @@
+<script>
+    const cidades = ["Sobradinho"]; //declaranado um vetor
+
+    cidades.push("Asa Sul");    // incluindo um valor ao final do array
+
+    cidades.unshift("Planaltina");  // incluindo um valor no inicio do array
+
+    // console.log(cidades);
+
+    // const ultimo = cidades.pop();   // removendo o último valor do array
+
+    // const inicio = cidades.shift(); // removendo o primeiro valor do array
+
+    // console.log(ultimo);
+    // console.log(inicio);
+    // console.log(cidades);
+
+
+    const letras = ["A", "B", "C", "D", "E"];
+    // const letras2 = letras.slice(-2);   // obtém as 2 últimas letras
+    // const letras3 = letras.slice(0, -2);    // obtém do início até o final, exceto as 2 últimas letras
+
+
+    // console.log(letras, typeof letras)
+    // console.log(letras2, typeof letras2)
+    // console.log(letras3, typeof letras3)
+
+    // console.log(letras3.length);
+    
+    // Imprimeindo o array com JavaScript
+    for(let x = 0; x < letras.length; x++){
+        console.log(letras[x]);
+    }
+
+    console.log('-'.repeat(40));
+    console.log(letras.toString());
+    console.log(letras.join(' - '));
+
+    console.log('-'.repeat(40));
+
+    for(const cidade of cidades){
+        console.log(cidade);
+    }
+
+
+    console.log('-'.repeat(40));
+
+    cidades.forEach((cidade, i) => {
+        console.log(`${i + 1}º Cidade: ${cidade}`);
+    });
+
+
+    console.log('-'.repeat(40));
+
+    const numeros = [10, 15, 30, 42];
+    let soma = 0;
+    numeros.forEach(num => soma += num)
+    console.log(soma, typeof soma);
+</script>
