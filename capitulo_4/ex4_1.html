@@ -1,61 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino" />
+    <meta name="descrition" content="Capítulo 4 - Exemplos 1 - Página 75" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Aspectos de compatibilidade entre navegadores -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Criação de páginas responsivas | desktop, table, smartphones -->
-    <meta name="author" content="Felipe Akel Carvalho Florentino">
-    <meta name="descrition" content="Capítulo 4 - Exemplos 1 - Página 75">
-
-    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
 
     <title>Capítulo 4 - Exemplos 1 - Página 75</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1>Capítulo 4
-            <small class="text-body-secondary">Exemplos 1 - Página 75</small>
-        </h1>
-        
-        <h3 class="mt-4">Programa Situação do Aluno</h3>
-        <p>
-            Formulário para informar se o aluno foi aprovado ou reprovado. 
-            <br>Aluno aprovado deve ter nota maior ou igual 7.0 o texto de aprovação deve ser em azul, caso contrário será em vermelho.
-        </p>
+      <h1>
+        Capítulo 4
+        <small class="text-body-secondary">Exemplos 1 - Página 75</small>
+      </h1>
 
-        <div class="row mb-3 ">
-            <div class="col-4 themed-grid-col">
-                
-                <form>
-                    <div class="mb-3">
-                        <label for="inAluno" class="form-label">Nome do Aluno:</label>
-                        <input type="text" class="form-control" name="inAluno" id="inAluno" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="inNota1" class="form-label">Nota 1:</label>
-                        <input type="number" class="form-control" name="inNota1" id="inNota1" step="0.01" min="0" max="10" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="inNota2" class="form-label">Nota 2:</label>
-                        <input type="number" class="form-control" name="inNota2" id="inNota2" step="0.01" min="0" max="10" required>
-                    </div>
+      <h3 class="mt-4">Programa Situação do Aluno</h3>
+      <p>
+        Formulário para informar se o aluno foi aprovado ou reprovado.
+        <br />Aluno aprovado deve ter nota maior ou igual 7.0 o texto de
+        aprovação deve ser em azul, caso contrário será em vermelho.
+      </p>
 
-                    <button type="submit" class="btn btn-primary">Exibir Média e Situação</button>
-                </form>
-
+      <div class="row mb-3">
+        <div class="col-4 themed-grid-col">
+          <form>
+            <div class="mb-3">
+              <label for="inAluno" class="form-label">Nome do Aluno:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="inAluno"
+                id="inAluno"
+                required
+              />
             </div>
-            <div class="col-4 themed-grid-col"></div>
-        </div>
+            <div class="mb-3">
+              <label for="inNota1" class="form-label">Nota 1:</label>
+              <input
+                type="number"
+                class="form-control"
+                name="inNota1"
+                id="inNota1"
+                step="0.01"
+                min="0"
+                max="10"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="inNota2" class="form-label">Nota 2:</label>
+              <input
+                type="number"
+                class="form-control"
+                name="inNota2"
+                id="inNota2"
+                step="0.01"
+                min="0"
+                max="10"
+                required
+              />
+            </div>
 
-        <h3 class="mt-4">Resultado(s)</h3>
-        <p id="outMedia"></p>
-        <p id="outSituacao"></p>
+            <button type="submit" class="btn btn-primary">
+              Exibir Média e Situação
+            </button>
+          </form>
+        </div>
+        <div class="col-4 themed-grid-col"></div>
+      </div>
+
+      <h3 class="mt-4">Resultado(s)</h3>
+      <p id="outMedia"></p>
+      <p id="outSituacao"></p>
     </div>
 
     <script src="js/ex4_1.js"></script>
-
-</body>
+  </body>
 </html>
