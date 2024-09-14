@@ -10,12 +10,12 @@ form.addEventListener("submit", (e)=>{
     let peso = null;
 
     if(sexo == 'M'){
-        peso = 22 * altura**2
+        peso = 22 * altura**2;
     } else {
-        peso = 21 * altura**2
+        peso = 21 * altura**2;
     }
 
-    outResultado.innerText = `${nome}: Seu peso ideal é ${peso.toFixed(3)}`;
+    outResultado.innerText = `${nome}: Seu peso ideal é ${peso.toFixed(3)} kg`;
 });
 
 form.addEventListener("reset", ()=>{
