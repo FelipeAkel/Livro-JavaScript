@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 4 - Exemplos 4.8 - Página 91">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 4 - Exemplos 4.8 - Página 91</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Capítulo 4 <small class="text-body-secondary">Exemplos 4.8 - Página 91</small>
+        </h1>
+
+        <h3 class="mt-4">Programa Farmácia</h3>
+        <p>
+            B) Uma farmácia necessita de um programa que leia o total e uma compra.
+            Exiba como resposta o nº máximo de vezes que o cliente pode parcelar essa compra e o valor e cada parcela.
+            Considere as seguintes condições:
+        </p>
+        <ol>
+            <li>
+                Cada parcela deve ser de, no mínimo, R$: 20,00;
+            </li>
+            <li>
+                O número máximo de parcelas permitio é 6; 
+            </li>
+        </ol>
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col"></div>
+            <div class="col-4 themed-grid-col">
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="inValor" class="form-label">Valor total da compra R$:</label>
+                        <input type="number" class="form-control" name="inValor" id="inValor" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Exibir valor divido em parcelas</button>
+                    <button type="reset" class="btn btn-secondary">Limpar</button>
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+        <p id="outValorDividido"></p>
+    </div>
+
+    <script src="js/ex4_8.js"></script>
+
+</body>
+</html>

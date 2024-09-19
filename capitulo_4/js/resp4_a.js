@@ -21,4 +21,5 @@ form.addEventListener("submit", (e)=>{
 form.addEventListener("reset", ()=>{
     outResultado.innerText = "";
     outOperadorTernario.innerText = "";
+    form.inNumero.focus();
 });

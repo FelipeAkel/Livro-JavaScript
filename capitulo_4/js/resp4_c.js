@@ -34,4 +34,5 @@ form.addEventListener("submit", (e)=>{
 form.addEventListener("reset", ()=> {
     outTempo.innerText = "";
     outTroco.innerText = "";
+    form.inValor.focus();
 });

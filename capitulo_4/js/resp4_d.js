@@ -71,4 +71,5 @@ form.addEventListener("submit", (e)=> {
 form.addEventListener("reset", ()=>{
     outTriangulo.innerText = '';
     outTipoTriangulo.innerText = '';
+    form.inLadoA.focus();
 });
