@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Felipe Akel Carvalho Florentino" />
+    <meta name="descrition" content="Capítulo 2 - Praticando" />
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+
+    <title>Praticando</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Capítulo 2<small class="text-body-secondary"> Praticando</small>
+        </h1>
+
+        <h3 class="mt-4">Programa Fuso Horário</h3>
+        <p>
+            Elaborar um programa para uma lan hause de um aeroporto.
+            <br>
+            O programa deve ler o valor em minutos de uso de um computador e o tempo de uso por um cliente em minutos.
+            <br>
+            Informa o valor a ser pago pelo clietne, sabendo que as frações extras de 15 minutos devem ser cobradas de forma integral.
+        </p>
+
+        <div class="row mb-3">
+            <div class="col-4 themed-grid-col">
+            <form>
+                <div class="mb-3">
+                    <label for="inValorUso" class="form-label">Valor por 15 minutos de uso R$: </label>
+                    <input 
+                        type="number"
+                        class="form-control"
+                        name="inValorUso"
+                        id="inValorUso"
+                        step="0.01"
+                        required
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label for="inTempo" class="form-label">Tempo de uso: </label>
+                    <input 
+                        type="number"
+                        class="form-control"
+                        name="inTempo"
+                        id="inTempo"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Exibir Valor Total a Pagar
+                </button>
+                <button type="reset" class="btn btn-secondary">Limpar</button>
+            </form>
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+            <p id="outTotalPagar"></p>
+        </div>
+
+        <script src="js/0-praticando.js"></script>
+
+        </div>
+    </body>
+</html>
