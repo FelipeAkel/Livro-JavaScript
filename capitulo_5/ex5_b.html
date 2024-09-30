@@ -6,42 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Aspectos de compatibilidade entre navegadores -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Criação de páginas responsivas | desktop, table, smartphones -->
     <meta name="author" content="Felipe Akel Carvalho Florentino">
-    <meta name="descrition" content="Capítulo 5 - Exemplos 7 - Página 115">
+    <meta name="descrition" content="Capítulo 5 - Exemplos 5.9 - Página 119">
 
     <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
     <link rel="stylesheet" href="../css/bootstrap.css">
 
-    <title>Capítulo 5 - Exemplos 7 - Página 115</title>
+    <title>Capítulo 5 - Exemplos 5.9 - Página 119</title>
 </head>
 
 <body>
     <div class="container">
         <h1>Capítulo 5
-            <small class="text-body-secondary">Exemplos 7 - Página 115</small>
+            <small class="text-body-secondary">Exemplos 5.9 - Página 119</small>
         </h1>
-
-        <h3 class="mt-4">Fábrica de Estrelas</h3>
+        
+        <h3 class="mt-4">Produto e Etiquetas</h3>
         <p>
-            O programa deve ler um número que corresponde à quantidade de símbolos que devem ser preenchidos.
-            <br>O preenchimento deve intercalar os caractteres "*" e "-".
+            B) Elaborar um programa que leia o nome de um produto e o número de etiquetas a serem impressas desse produto.
+            <br>
+            Exiba as etiquetas com o nome do produto, com no máximo 2 etiquetas por linha.
         </p>
 
         <div class="row mb-3 ">
             <div class="col-4 themed-grid-col">
-                <figure class="figure">
-                    <img src="img/ex5_7.jpg" class="figure-img img-fluid rounded" alt="Imagem Ilustrativa Exemplo">
-                    <figcaption class="figure-caption">Imagem Ilustrativa Exemplo</figcaption>
-                </figure>
             </div>
             <div class="col-4 themed-grid-col">
                 
                 <form>
                     <div class="mb-3">
-                        <label for="inNumero" class="form-label">Número:</label>
-                        <input type="number" class="form-control" name="inNumero" id="inNumero" min="1" required>
+                        <label for="inProduto" class="form-label">Produto:</label>
+                        <input type="text" class="form-control" name="inProduto" id="inProduto" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inQuantEtiqueta" class="form-label">Quantidade de etiquetas:</label>
+                        <input type="number" class="form-control" name="inQuantEtiqueta" id="inQuantEtiqueta" min="1" required>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Visualizar</button>
+                    <button type="submit" class="btn btn-primary">Mostrar Resultado</button>
                     <button type="reset" class="btn btn-secondary">Limpar</button>
                 </form>
 
@@ -51,10 +52,9 @@
 
         <h3 class="mt-4">Resultado(s)</h3>
         <p id="outResultado"></p>
-        
     </div>
 
-    <script src="js/ex5_7.js"></script>
+    <script src="js/ex5_b.js"></script>
 
 </body>
 </html>

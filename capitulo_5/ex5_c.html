@@ -6,39 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Aspectos de compatibilidade entre navegadores -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Criação de páginas responsivas | desktop, table, smartphones -->
     <meta name="author" content="Felipe Akel Carvalho Florentino">
-    <meta name="descrition" content="Capítulo 5 - Exemplos 7 - Página 115">
+    <meta name="descrition" content="Capítulo 5 - Exemplos 5.10 - Página 120">
 
     <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
     <link rel="stylesheet" href="../css/bootstrap.css">
 
-    <title>Capítulo 5 - Exemplos 7 - Página 115</title>
+    <title>Capítulo 5 - Exemplos 5.10 - Página 120</title>
 </head>
 
 <body>
     <div class="container">
         <h1>Capítulo 5
-            <small class="text-body-secondary">Exemplos 7 - Página 115</small>
+            <small class="text-body-secondary">Exemplos 5.10 - Página 120</small>
         </h1>
 
-        <h3 class="mt-4">Fábrica de Estrelas</h3>
+        <h3 class="mt-4">Sub Título</h3>
         <p>
-            O programa deve ler um número que corresponde à quantidade de símbolos que devem ser preenchidos.
-            <br>O preenchimento deve intercalar os caractteres "*" e "-".
+            C) Elaborar um programa para uma loja que leia o valor de uma conta e o número de vezes que um cliente deseja parcelar esse valor (em boletos ou carnê).
+            <br>
+            Para facilitar o troco, o lojista deseja que as parcelas iniciais não tenham centavos, ou seja, centavos apenas na última parcela.
+            <br>
+            Informe como resposta o valor de cada parcela, considerando essa situação.
         </p>
 
         <div class="row mb-3 ">
             <div class="col-4 themed-grid-col">
-                <figure class="figure">
-                    <img src="img/ex5_7.jpg" class="figure-img img-fluid rounded" alt="Imagem Ilustrativa Exemplo">
-                    <figcaption class="figure-caption">Imagem Ilustrativa Exemplo</figcaption>
-                </figure>
             </div>
             <div class="col-4 themed-grid-col">
                 
                 <form>
                     <div class="mb-3">
-                        <label for="inNumero" class="form-label">Número:</label>
-                        <input type="number" class="form-control" name="inNumero" id="inNumero" min="1" required>
+                        <label for="inConta" class="form-label">Valor da conta:</label>
+                        <input type="number" class="form-control" name="inConta" id="inConta" min="1" step="0.01" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inParcelas" class="form-label">Parcelas:</label>
+                        <input type="number" class="form-control" name="inParcelas" id="inParcelas" min="1" required>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Visualizar</button>
@@ -51,10 +54,9 @@
 
         <h3 class="mt-4">Resultado(s)</h3>
         <p id="outResultado"></p>
-        
     </div>
 
-    <script src="js/ex5_7.js"></script>
+    <script src="js/ex5_c.js"></script>
 
 </body>
 </html>

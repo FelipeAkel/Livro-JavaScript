@@ -16,3 +16,8 @@ form.addEventListener("submit", (e) => {
     }
     outResultado.innerText = resultado;
 });
+
+form.addEventListener("reset", () => {
+    outResultado.innerText = "";
+    form.inNumero.focus();
+});

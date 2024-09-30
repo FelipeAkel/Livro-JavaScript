@@ -25,3 +25,8 @@ form.addEventListener("submit", (e)=>{
         outResultado.innerText = `O número ${numero} NÃO é PRIMO`;
     }
 });
+
+form.addEventListener("reset", () => {
+    outResultado.innerText = "";
+    form.inNumero.focus();
+});
