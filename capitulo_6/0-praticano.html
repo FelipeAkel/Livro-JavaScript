@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 6 - Exemplos XXX - Página 126">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 6 - Exemplos XXX - Página 126</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 6
+            <small class="text-body-secondary">Exemplos XXX - Página 126</small>
+        </h1>
+
+        <h3 class="mt-4">Estudos</h3>
+        <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">Insert de dados no Array</li>
+            <li class="list-group-item">push - No final</li>
+            <li class="list-group-item">unshith - No início</li>
+            <li class="list-group-item active" aria-current="true">Retirar dados do Array</li>
+            <li class="list-group-item">pop - No final</li>
+            <li class="list-group-item">shith - No início</li>
+        </ul>
+
+        <script>
+            const cidades = ["Asa Sul"];
+                console.log(cidades, typeof cidades);
+
+            cidades.push("Asa Norte");
+                console.log("Insert com o 'push' : ", cidades);
+
+            cidades.unshift("Sobradinho");
+                console.log("Insert com o 'unshith' : ", cidades);
+
+            const retiraFinal = cidades.pop(cidades);
+                console.warn("retiraFinal: ", retiraFinal);
+                console.log("Retira com o 'pop' : ", cidades);
+
+            const retirarInicio = cidades.shift(cidades);
+                console.warn("retirarInicio: ", retirarInicio);
+                console.log("Retira com o 'shith' : ", cidades);
+        </script>
+
+    </div>
+
+</body>
+</html>

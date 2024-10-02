@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 6 - Exemplos XXX - Página 126 - 128">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 6 - Exemplos XXX - Página 126 - 128</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 6
+            <small class="text-body-secondary">Exemplos XXX - Página 126 - 128</small>
+        </h1>
+
+        <h3 class="mt-4">Estudos</h3>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-primary" aria-current="true">Incluir dados no Array</li>
+            <li class="list-group-item">push - No final</li>
+            <li class="list-group-item">unshith - No início</li>
+            <li class="list-group-item list-group-item-primary" aria-current="true">Retirar dados do Array</li>
+            <li class="list-group-item">pop - No final</li>
+            <li class="list-group-item">shith - No início</li>
+        </ul>
+
+        <script>
+            const cidades = ["Asa Sul"];
+                console.log(cidades, typeof cidades);
+
+            cidades.push("Asa Norte");
+                console.log("Incluir com o 'push' : ", cidades);
+
+            cidades.unshift("Sobradinho");
+                console.log("Incluir com o 'unshith' : ", cidades);
+
+            const retiraFinal = cidades.pop(cidades);
+                console.warn("retiraFinal: ", retiraFinal);
+                console.log("Retira com o 'pop' : ", cidades);
+
+            const retirarInicio = cidades.shift(cidades);
+                console.warn("retirarInicio: ", retirarInicio);
+                console.log("Retira com o 'shith' : ", cidades);
+
+
+                console.error('-'.repeat(70));
+        </script>
+
+        <hr>
+
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-secondary" aria-current="true">Mais sobre o Array - <b>splice</b></li>
+            <li class="list-group-item">Na ideia de emendar (alterar, inserir, remover)</li>
+            <li class="list-group-item">Modifica o conteúdo original</li>
+            <li class="list-group-item list-group-item-secondary" aria-current="true">Mais sobre o Array - <b>slice</b></li>
+            <li class="list-group-item">Na ideia de fatiar, dividir, criar outro array com valores</li>
+            <li class="list-group-item">NÃO modifica o conteúdo original</li>
+        </ul>
+
+        <script>
+            const letras = ["A", "B", "C", "D", "E"];
+
+            const letraSlice = letras.slice(-2);        // obtém as 2 últimas letras
+            const letraSlice2 = letras.slice(0, -2);    // obtém do ínicio até o final, exeto as últimas
+            
+                console.log('letras', letras);
+                console.log('[ obtém as 2 últimas letras ] ', letraSlice);
+                console.log('[ obtém do ínicio até o final, exeto as últimas ] ', letraSlice2);
+
+            const retiraSplice = letras.splice(2, 2);   // retirar a partir da 2º posição, 2 elementos
+                console.log('retiraSplice', retiraSplice);
+                console.log('letras', letras);
+
+            
+            console.error('-'.repeat(70));
+        </script>
+
+        <hr>
+
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-warning" aria-current="true">Mais sobre o Array - <b>converter para string</b></li>
+            <li class="list-group-item">toString - Em uma string separada por virgula</li>
+            <li class="list-group-item">join(' - ') - Em uma string separada por caracter de sua escolha </li>
+        </ul>
+
+        <script>
+            const chavesPk = [1, 5, 20, 40, 50, 88, 99];
+                console.log(chavesPk, typeof chavesPk);
+
+            const chavesToString = chavesPk.toString();
+                console.log(chavesToString, typeof chavesToString);
+
+            const chavesJoin = chavesPk.join(' - ');
+                console.log(chavesJoin, typeof chavesJoin);
+        </script>
+
+    </div>
+
+</body>
+</html>

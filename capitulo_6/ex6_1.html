@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Aspectos de compatibilidade entre navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Criação de páginas responsivas | desktop, table, smartphones -->
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 6 - Exemplos 1 - Página 129">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 6 - Exemplos 1 - Página 129</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 6
+            <small class="text-body-secondary">Exemplos 1 - Página 129</small>
+        </h1>
+        <p>Descrição Aqui</p>
+
+        <h3 class="mt-4">Sub Título</h3>
+        <p>Descrição Aqui</p>
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col">
+                <figure class="figure"></figure>
+                    <img src="img/ex6_1.jpg" class="figure-img img-fluid rounded" alt="Imagem Ilustrativa Exemplo">
+                    <figcaption class="figure-caption">Imagem Ilustrativa Exemplo</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 themed-grid-col">
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="inPaciente" class="form-label">Paciente:</label>
+                        <input type="text" class="form-control" name="inPaciente" id="inPaciente" required autofocus>
+                    </div>
+
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                            <button type="submit" class="btn btn-primary" >Adicionar</button>
+                            <button type="button" class="btn btn-danger" id="btnUrgencia" >Urgência</button>
+                        </div>
+                        <div class="btn-group me-2" role="group" aria-label="Second group">
+                            <button type="button" class="btn btn-info" id="btnAtender" >Atender</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Em atendimento: <span class="text-info" id="outAtendimento"></span></h3>
+        
+        <h3 class="mt-4">Fila de Espera</h3>
+        <pre id="outFilaEspera"></pre>
+    </div>
+
+    <script src="js/ex6_1.js"></script>
+
+</body>
+</html>
