@@ -98,6 +98,31 @@
 
             const chavesJoin = chavesPk.join(' - ');
                 console.log(chavesJoin, typeof chavesJoin);
+
+            
+            console.error('-'.repeat(70));
+        </script>
+
+        <hr>
+
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success" aria-current="true">Mais sobre o Array - <b>Localizar Dados</b></li>
+            <li class="list-group-item">indexOf() - Busca pelo inicio para o final, retorna a posição</li>
+            <li class="list-group-item">lastIndexOf() - Busca do final para o inicio, retorna a posição</li>
+            <li class="list-group-item">includes - retorna true ou false</li>
+        </ul>
+
+        <script>
+            const dadosArray = [3, 9, 5 ,2 ,9 ,8, 1];
+                console.log(dadosArray, typeof dadosArray);
+
+            console.log('indexOf: ', dadosArray.indexOf(9));
+            console.log('lastIndexOf: ', dadosArray.lastIndexOf(9));
+            console.log('includes: ', dadosArray.includes(3));
+            console.log('retorno quando não encontrado: ', dadosArray.indexOf(99));
+
+            console.error('-'.repeat(70));
+
         </script>
 
     </div>
