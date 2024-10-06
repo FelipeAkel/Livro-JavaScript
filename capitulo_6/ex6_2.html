@@ -21,7 +21,7 @@
         </h1>
 
         <h3 class="mt-4">Jogo Descubra o Número</h3>
-        <p>Descrição Aqui</p>
+        <p>Abordagem do livro.</p>
 
         <div class="row mb-3 ">
             <div class="col-4 themed-grid-col">
@@ -45,10 +45,13 @@
                             required 
                             autofocus
                         >
+                        <div class="form-text text-success">
+                            Acertou Número Premidado!
+                        </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Apostar</button>
-                    <button type="reset" class="btn btn-secondary"> Limpar </button>
+                    <button type="submit" class="btn btn-primary" id="btnApostar">Apostar</button>
+                    <button type="button" class="btn btn-dark invisible" id="btnJogarNovamente">Jogar Novamente</button>
                 </form>
 
             </div>
@@ -56,10 +59,10 @@
         </div>
 
         <h3 class="mt-4">Resultado(s)</h3>
-        <p id="outResultado"></p>
-        <p id="outNumApostados"></p>
-        <p id="outChances"></p>
-        <p id="outDicas"></p>
+        <p><b><span id="outResultado"></span></b></p>
+        <p><b>Números Apostados:</b> <span id="outNumApostados"></span></p>
+        <p><b>Chances:</b> <span id="outChances">6</span></p>
+        <p><b>Dica:</b> <span id="outDicas">O número está entre 1 e 100.</span></p>
     </div>
 
     <script src="js/ex6_2.js"></script>

@@ -5,75 +5,52 @@ const outChances = document.getElementById("outChances");
 const outDicas = document.getElementById("outDicas");
 
 const numPremiado = Math.floor(Math.random() * 100) + 1;  // Num aleatório entre 1 e 100
+// const numPremiado = 25;
 let numApostados = [];
 let chances = 6;
 let dicas = "";
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    this.resetResultado();
 
     const numero = Number(form.inNumero.value);
 
-    if(numApostados.includes(numero)){
-        outNumApostados.innerText = `Atenção! Você já apostou este número ${numero}.`;
-        outNumApostados.classList = "text-warning";
-        this.inNumeroFocus();
-        return;
-    }
-
-    numApostados.push(numero);
-    outNumApostados.innerText = `Números apostados: ${numApostados.join(' - ')}`;
-    outNumApostados.classList.remove("text-warning");
-    
     if(numero === numPremiado){
-        outResultado.innerText = `Parabéns! Você acertou o número premiado ${numero}.`;
+        outResultado.innerText = `Parabéns! Você acertou o número premiado ${numPremiado}`;
         outResultado.classList = "text-success";
-        this.resetDados();
-        this.inNumeroFocus();
-        return;
-    }
-
-    chances = chances - 1;
-    outChances.innerText = `Chances restantes: ${chances}`;
-
-    if (chances === 0){
-        outResultado.innerText = `Perdeu! O número premiado era ${numPremiado}.`;
-        outResultado.classList = "text-danger";
-        this.resetDados();
-        this.inNumeroFocus();
-        return;
-    }
-
-    if(numPremiado > numero){
-        outDicas.innerText = `O número premiado é MAIOR que ${numero}`;
+        this.jogarNovamente();
     } else {
-        outDicas.innerText = `O número premiado é MENOR que ${numero}`;
+        if(numApostados.includes(numero)){
+            outDicas.innerText = `Atenção! Você já apostou esse número. Tente outros diferentes dos Números Apostados`;
+            outDicas.classList = "text-warning";
+            form.inNumero.value = "";
+            form.inNumero.focus();
+            return;
+        }
+
+        numApostados.push(numero);
+        outNumApostados.innerText =  numApostados.join(' - ');
+        outChances.innerText = chances - numApostados.length;
+
+        if(numApostados.length >= chances){
+            outResultado.innerText = `Perdeu! Você não acertou o número premiado ${numPremiado}.\n Boa sorte na próxima!`;
+            outResultado.classList = "text-danger";
+            this.jogarNovamente();
+            return;
+        }
+
+        const dica = numPremiado > numero ? 'MAIOR' : 'MENOR';
+        outDicas.innerText = `O número premiado é ${dica} que ${numero}`;
+
     }
-
-    this.inNumeroFocus();
 });
 
-form.addEventListener("reset", () => {
-    this.resetResultado();
-    this.resetDados();
-    form.inNumero.focus();
+form.btnJogarNovamente.addEventListener("click", () => {
+    location.reload();
 });
 
-function inNumeroFocus(){
-    form.inNumero.value = "";
-    form.inNumero.focus();
-}
-
-function resetResultado() {
-    outResultado.innerText = ``;
-    outResultado.classList.remove("text-success", "text-danger");
-}
-
-function resetDados (){
-    outNumApostados.innerText =``;
-    outChances.innerText = ``;
-    outDicas.innerText = ``;
-    numApostados = [];
-    chances = 6;
+function jogarNovamente(){
+    form.inNumero.disabled = "true";
+    form.btnApostar.disabled = "true";
+    form.btnJogarNovamente.classList.remove("invisible");
 }
