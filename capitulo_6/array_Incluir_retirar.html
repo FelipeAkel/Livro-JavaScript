@@ -123,6 +123,40 @@
 
             console.error('-'.repeat(70));
 
+            console.error('-'.repeat(70));
+        </script>
+
+        <hr>
+
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success" aria-current="true">Mais sobre o Array - <b>Vetores de Objetos</b></li>
+            <li class="list-group-item">atribuir dados no array - outra forma</li>
+        </ul>
+
+        <script>
+            const filmes = [];
+
+            filmes.push({nome: "Harry Potter", duracao: 240, ano: 2002});
+            filmes.push({nome: "Piratas do Caribe", duracao: 270, ano: 2010});
+            filmes.push({nome: "Senhor dos Anéis", duracao: 390, ano: 2012});
+
+            for(const filme of filmes){
+                console.log(filme.nome, filme.duracao, filme.ano);
+                console.log(typeof filme.nome, typeof filme.duracao, typeof filme.ano);
+            }
+
+            console.warn('Atribuir dados no array - outra forma')
+
+            const carros = [];
+            const nome = "BMW";
+            const ano = 2024;
+
+            carros.push({nome, ano});
+
+            for(const carro of carros){
+                console.log(carro.nome, carro    .ano);
+            }
+
         </script>
 
     </div>
