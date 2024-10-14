@@ -157,6 +157,43 @@
                 console.log(carro.nome, carro    .ano);
             }
 
+            console.error('-'.repeat(70));
+        </script>
+
+        <hr>
+
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success" aria-current="true">Map, Filter, Reduce <b></b></li>
+            <li class="list-group-item">Map - Cria um novo Array </li>
+            <li class="list-group-item">Filter - Criar um novo Array</li>
+        </ul>
+
+        <script>
+            const amigos = [
+                { nome: "Fulano Silva", idade: 10 },
+                { nome: "Felipe Akel", idade: 32 },
+                { nome: "Violêta Nolêto", idade: 36 },
+                { nome: "Cicero Florentino", idade: 60 },
+                { nome: "Zenaide Carvalho", idade: 56},
+                { nome: "Raquel", idade: 12 },
+                { nome: "Pedro", idade: 15 },
+
+            ];
+
+            const amigos2 = amigos.map(aux => ({
+                nome: aux.nome, anoNasciomento: 2024 - aux.idade, idade: aux.idade
+            }));
+
+            for(const amigo of amigos2) {
+                console.log(`Nome: ${amigo.nome} - Ano Nascimento: ${amigo.anoNasciomento} - Idade: ${amigo.idade}`);
+            }
+
+            const idadeMenor18 = amigos.filter(aux => aux.idade < 18 );
+
+            for(const menor18 of idadeMenor18) {
+                console.log(`Idade Menor que 18: ${menor18.idade} - ${menor18.nome}`,  );
+            }
+            
         </script>
 
     </div>
