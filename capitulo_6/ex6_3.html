@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 6 - Exemplos 3 - Página 146">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 6 - Exemplos 3 - Página 146</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 6
+            <small class="text-body-secondary">Exemplos 3 - Página 146</small>
+        </h1>
+
+        <h3 class="mt-4">Revenda Herbie</h3>
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col">
+                <figure class="figure"></figure>
+                    <img src="img/ex6_3.jpg" class="figure-img img-fluid rounded" alt="Imagem Ilustrativa Exemplo">
+                    <figcaption class="figure-caption">Imagem Ilustrativa Exemplo</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 themed-grid-col">
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="inModelo" class="form-label">Modelo Veículo: </label>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            name="inModelo" 
+                            id="inModelo" 
+                            required 
+                            autofocus
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inPreco" class="form-label">Preço R$: </label>
+                        <input 
+                            type="number" 
+                            class="form-control" 
+                            name="inPreco" 
+                            id="inPreco" 
+                            min="0" 
+                            step="0.01" 
+                            required
+                        >
+                    </div>
+
+                    <div class="row g-3 pb-3">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Adicionar</button>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" id="btnListarModelos" class="btn btn-dark">Listar Todos</button>
+                                <button type="button" id="btnFiltrarPreco" class="btn btn-info">Filtrar Por Preço</button>
+                                <button type="button" id="btnSimularPromocao" class="btn btn-warning">Simular Promoção</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+        <pre id="outResultado"></pre>
+    </div>
+
+    <script src="js/ex6_3.js"></script>
+
+</body>
+</html>
