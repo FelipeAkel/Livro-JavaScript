@@ -194,6 +194,26 @@
                 console.log(`Idade Menor que 18: ${menor18.idade} - ${menor18.nome}`,  );
             }
             
+            console.error('-'.repeat(70));
+        </script>
+
+        <hr>
+
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-info" aria-current="true">Classificação do Array em ordem alfabética <b></b></li>
+            <li class="list-group-item"> nomeArray.sort() </li>
+            <li class="list-group-item"> nomeArray.reverse() </li>
+        </ul>
+
+        <script>
+            const nomes = [ 'Felipe', 'Violêta', 'Regina', 'Vitor' ];
+            const numeros = [ 2, 100, 20, 11, 99, 150, 3, 68, 32, 44, 44, 905, 390, 543, 120, 69050, 25098, 78431 ];
+            console.warn(nomes)
+            console.log(`Ordem Alfabética: \n`, nomes.sort());
+            console.log(`Order Decrescente: \n`, nomes.reverse());
+            console.warn(numeros)
+            console.log(`Ordem Alfabética: \n`, numeros.sort((a, b) => a - b));
+            console.log(`Order Decrescente: \n`, numeros.reverse((a, b) => a - b));
         </script>
 
     </div>

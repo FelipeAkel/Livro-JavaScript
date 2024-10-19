@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 6 - Exemplos 4 - Página 151">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 6 - Exemplos 4 - Página 151</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 6
+            <small class="text-body-secondary">Exemplos 4 - Página 151</small>
+        </h1>
+
+        <h3 class="mt-4">Programa Brinquedoteca</h3>
+        <p>Faça um programa que leia o nome e idade de crianças e exiba o número e o percentual de  crianças em cada idade, a fim de que os brinquedos sejam comprados de acordo com a faixa etária delas.</p>
+        <p>O programa deve armazenar os dados em um vetor de registros e apresentar o resumo conforme solicitado.</p>
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col">
+                <figure class="figure"></figure>
+                    <img src="img/ex6_4.jpg" class="figure-img img-fluid rounded" alt="Imagem Ilustrativa Exemplo">
+                    <figcaption class="figure-caption">Imagem Ilustrativa Exemplo</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 themed-grid-col">
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="inCrianca" class="form-label">Nome de Criança:</label>
+                        <input type="text" class="form-control" name="inCrianca" id="inCrianca" required autofocus>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inIdade" class="form-label">Idade:</label>
+                        <input type="number" class="form-control" name="inIdade" id="inIdade" min="0" max="12" required>
+                    </div>
+
+                    <div class="row g-3 pb-3">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Adicionar</button>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-dark" id="btnListarTodos">Listar Todos</button>
+                                <button type="button" class="btn btn-info" id="btnResumirIdade">Resumir por idade</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+        <pre id="outResultado"></pre>
+    </div>
+
+    <script src="js/ex6_4.js"></script>
+
+</body>
+</html>
