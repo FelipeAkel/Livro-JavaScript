@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 6 - Exercício A - Página 159">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 6 - Exercício A - Página 159</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 6
+            <small class="text-body-secondary">Exercício A - Página 159</small>
+        </h1>
+
+        <h3 class="mt-4">Jogos Eliminatórios</h3>
+        <p>A) Elaborar um programa para gerar uma tabela com os jogos de uma fase eliminatória de um campeonato.
+            <br>
+            O programa deve conter três funções (a serem executadas no evento click de cada botão) para:
+        </p>
+        <ol>
+            <li>
+                Validar o preenchimento, adicionar um clube no vetor e listar os clubes;
+            </li>
+            <li>
+                listar os clubes (se houver);
+            </li>
+            <li>
+                montar a tabela de jogos, no formato primeiro x último, segundo x penúltimo e assim por diante;
+            </li>
+        </ol>
+        <p>
+            Exibir mensagem e não listar a tabela de jogos, caso o número de clubes informados seja ímpar.
+        </p>
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col">
+                <figure class="figure"></figure>
+                    <img src="img/exerc.jpg" class="figure-img img-fluid rounded" alt="Imagem Ilustrativa Exemplo">
+                    <figcaption class="figure-caption">Imagem Ilustrativa Exemplo</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 themed-grid-col">
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="inClube" class="form-label">Clube:</label>
+                        <input type="text" class="form-control" name="inClube" id="inClube" required autofocus>
+                    </div>
+
+                    <div class="row g-3 pb-3">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Adicionar</button>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-dark" id="btnListarClubes">Listar Clubes</button>
+                                <button type="button" class="btn btn-info" id="btnMostrarTabelas">Mostrar Tabelas de Jogos</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+        <pre id="outResultado"></pre>
+    </div>
+
+    <script src="js/resp6_a.js"></script>
+
+</body>
+</html>
