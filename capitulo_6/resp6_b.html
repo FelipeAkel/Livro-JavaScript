@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Akel Carvalho Florentino">
+    <meta name="descrition" content="Capítulo 6 - Exercício B - Página 160">
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <title>Capítulo 6 - Exercício B - Página 160</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Capítulo 6
+            <small class="text-body-secondary">Exercício B - Página 160</small>
+        </h1>
+
+        <h3 class="mt-4">Programa Números em Ordem</h3>
+        <p>
+            B) Elaborar um programa que adicione números a um vetor.<br>
+            O programa deve impedir a inclusão de números repetidos.<br>
+            Exibir a lista de números a cada inclusão.<br>
+            Ao clicar no botão <b>Veriricar Ordem</b>, o programa deve analisar o conteúdo do vetor e informar se os números estão em ordem crescente.
+        </p>
+       
+
+        <div class="row mb-3 ">
+            <div class="col-4 themed-grid-col">
+                <figure class="figure"></figure>
+                    <img src="img/exerc.jpg" class="figure-img img-fluid rounded" alt="Imagem Ilustrativa Exemplo">
+                    <figcaption class="figure-caption">Imagem Ilustrativa Exemplo</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 themed-grid-col">
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="inNumero" class="form-label">Clube:</label>
+                        <input type="number" class="form-control" name="inNumero" id="inNumero" min="0" required autofocus>
+                    </div>
+
+                    <div class="row g-3 pb-3">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Adicionar</button>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-dark" id="btnVerificarOrdem">Verificar Ordem</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="col-4 themed-grid-col"></div>
+        </div>
+
+        <h3 class="mt-4">Resultado(s)</h3>
+        <p id="outNumeros"></p>
+        <p id="outVerificarOrdem"></p>
+    </div>
+
+    <script src="js/resp6_b.js"></script>
+
+</body>
+</html>
