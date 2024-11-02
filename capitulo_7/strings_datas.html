@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Felipe Akel Carvalho Florentino" />
+    <meta
+      name="descrition"
+      content="Capítulo 7 - Conteúdo - Página 163 a 189"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+
+    <title>Capítulo 7 - Conteúdo - Página 163 a 189</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        Capítulo 7
+        <small class="text-body-secondary">Conteúdo - Página 163 a 189</small>
+      </h1>
+
+      <h3 class="mt-4">Estudos</h3>
+
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-primary" aria-current="true">
+          Convertendo string para Maiúsculas e Minúsculas
+        </li>
+        <li class="list-group-item">
+          Maiúsculas - parametro.<b>toUperCase()</b>
+        </li>
+        <li class="list-group-item">
+          Minúsculas - parametro.<b>toLowerCase()</b>
+        </li>
+      </ul>
+
+      <script>
+        while (true) {
+          const simNao = prompt("Deseja Continuar? (S = Sim / N = Não)");
+          if (simNao.toUpperCase() == "N") {
+            console.log("toUpperCase ", simNao.toUpperCase(), typeof simNao);
+            console.log("toLowerCase ", simNao.toLowerCase(), typeof simNao);
+            break;
+          }
+        }
+
+        console.error("-".repeat(80));
+      </script>
+
+      <br />
+
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-primary" aria-current="true">
+          Recuperar Parter de uma String. Possível passar duas parametros para
+          este comando. PO
+        </li>
+        <li class="list-group-item">
+          Parter de Uma String - parametro.<b
+            >substr(POSICAO_INICIAL, QTD_A_SER_COPIADO)</b
+          >
+        </li>
+        <li class="list-group-item">parametro.<b>substr(2, 4)</b></li>
+        <li class="list-group-item">parametro.<b>substr(2)</b></li>
+        <li class="list-group-item">
+          parametro.<b>substr(-2)</b> Inicia de último caracter!
+        </li>
+        <li class="list-group-item list-group-item-primary" aria-current="true">
+          Possível utilizar o slice(), substring()
+        </li>
+        <li class="list-group-item list-group-item-primary" aria-current="true">
+          <b>trim()</b> - Retirar espaços em branco do inicio e final
+        </li>
+      </ul>
+
+      <script>
+        const parametro = "saladas";
+
+        const copia1 = parametro.substr(2, 4); // R: lada
+        console.log(copia1);
+
+        const copia2 = parametro.substr(2); // R: ladas
+        console.log(copia2);
+
+        const copia3 = parametro.substr(-3); // R: das
+        console.log(copia3);
+
+        console.error("-".repeat(80));
+      </script>
+
+      <br />
+
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-primary" aria-current="true">
+          Localizar caracteres detro de uma string
+        </li>
+        <li class="list-group-item">
+          Retorna a posição, inicia-se do início - parametro.<b>indexOf('a')</b>
+        </li>
+        <li class="list-group-item">
+          Retorna a posição, inicia-se do final - parametro.<b
+            >lastIndexOf('a')</b
+          >
+        </li>
+        <li class="list-group-item">
+          Retorna a posição, grupo de caracter - parametro.<b>indexOf('sal')</b>
+        </li>
+        <li class="list-group-item">
+          Se não encontrar retorna o valor -1 - parametro.<b
+            >lastIndexOf('e')</b
+          >
+        </li>
+        <li class="list-group-item">
+          Retorna a true ou false - parametro.<b>includes('a')</b>
+        </li>
+      </ul>
+
+      <script>
+        const verdura = "saladas";
+
+        console.log(verdura.indexOf("a"));
+        console.log(verdura.lastIndexOf("a"));
+        console.log(verdura.indexOf("sal"));
+        console.log(verdura.indexOf("e"));
+        console.log(verdura.includes("a"));
+
+        console.error("-".repeat(80));
+      </script>
+    </div>
+  </body>
+</html>

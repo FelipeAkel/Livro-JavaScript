@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Felipe Akel Carvalho Florentino" />
+    <meta name="descrition" content="Capítulo 7 - Exemplos 1 - Página 165" />
+
+    <link rel="icon" type="image/x-icon" href="/img/java-script.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+
+    <title>Capítulo 7 - Exemplos 1 - Página 165</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        Capítulo 7
+        <small class="text-body-secondary">Exemplos 1 - Página 165</small>
+      </h1>
+
+      <h3 class="mt-4">Percorrer os caracteres de uma string</h3>
+    </div>
+
+    <script>
+      let anuncio = prompt("Digite um Anúncio: ");
+
+      let numPalavras = 0;
+
+      for (let x = 0; x < anuncio.length; x++) {
+        if (anuncio.charAt(x) == " ") {
+          numPalavras += 1;
+        }
+        // console.log(anuncio.charAt(x));
+      }
+      numPalavras += 1; // Última palavra depois do loop
+
+      alert(
+        `O Anúncio é:\n${anuncio} \n\nNúmero de Palavras: \n${numPalavras}`
+      );
+    </script>
+  </body>
+</html>
